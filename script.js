@@ -6,8 +6,7 @@ if (number%2==0) {
 } else{
     console.log("the number is odd")
 }
-*/
-/*
+
 // Task 2 
 const pi = 3.14 
 let r = parseInt(prompt("Enter the Radius Circle :") );
@@ -115,7 +114,7 @@ console.log(name);
 */
 
 // index of 
-
+/*
 let string ="mahmoud hussien awad" ;
 console.log(string.indexOf("mahmoud"))
 // repeat 
@@ -304,3 +303,94 @@ let nnumbre =[10,20,30,15] // 75
 
 let redu = nnumbre.reduce((acc,current)=> acc+current);
 console.log(redu)
+// ######################## object ######################################
+let customer = {
+    name :"awad" ,
+    age :"23" ,
+    add :"manqbad/assuit" ,
+    gpa : "3.4" ,
+    skills :["html" ,"css" ,"js" ,"bootstrap" ,"php" ,"leravel"] 
+}
+console.log(customer.age);
+console.log(customer.skills[4]);
+// object by new oject  
+let user = new Object ({
+    age  : "25",
+    username : "awad" ,
+    sayHello :function(){
+        return `hello ${this.username}`
+    },
+    ageInDay :function(){
+        return `${this.age * 365}`
+
+    }
+})
+
+console.log(user.sayHello())
+console.log(user.ageInDay())
+
+let client =Object.create({
+    name :"Ali" ,
+    age : "25" ,
+    address:{
+        city :"assuit" ,
+        country : "Egypt" ,
+        street :"ali abo zaied"
+
+    }
+})
+console.log(client.address["street"]);
+/*
+
+*/
+/*
+//###################################################################
+let number  =parseInt(prompt("Enter the number :")) ;
+ let isOddOrEven = function (number){
+    if(number %2==0){
+        console.log(`the number  ${number} is :  even`)
+    }else{
+        console.log(`the number  ${number} is :  odd`)
+    }
+
+ }
+ isOddOrEven(number)
+ */
+ 
+/*
+ let radius = parseFloat(prompt("Enter the Radius Circle :") );
+
+ let circleArea = (radius) => ` the circleArea is :${Math.PI * Math.pow(radius,2)} `;
+let circumference =(radius) => `the circumference is : ${2*Math.PI *radius}`;
+console.log(circleArea(radius))
+console.log(circumference(radius))
+*/
+/*
+let num1=parseFloat(prompt('Enter the number 1 '));
+let num2=parseFloat(prompt('Enter the number 2 '));
+function calc(num1,num2) {{
+    return  `the sum is two numbers is : ${num1+num2}`
+}}
+
+console.log(calc(num1,num2));
+*/
+/*
+let a = parseInt(prompt("Enter the number is checked : ")) ;
+function negativeAndPositiveNumber(a){
+    if ( a  > 0 ) {
+        console.log(`the number ${a} is positive`)
+    }else if (a < 0 ) {
+        console.log(`the number ${a} is negative`);
+    }else {
+        console.log(`the number ${a} neither positive nor negative`);
+    }
+} 
+negativeAndPositiveNumber(a);  
+*/
+/*
+let string= prompt("Enter the string :") ;
+let reverseString = (string)=> string.split('').reverse('').join('');
+console.log(reverseString(string))
+
+*/
+   
